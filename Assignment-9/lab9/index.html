@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Appointment Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">WebManager</div>
+        <div class="nav">
+            <nav>
+                <a href="">Home</a>
+                <a href="#About">About</a>
+                <a href="#Services">Services</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <div class="welcome">Welcome to WebManager - Your One-stop Solution for Appointments</div>
+    <div class="services">What do we Provide?</div>
+    <div class="servs">
+        <div class="serv1">
+            <h3>Doctor Appointment</h3><br>
+            <p>We offer a secure place to book your medical appointments.</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+        <div class="serv2">
+            <h3>Salon Appointments</h3><br>
+            <p>Book your appointments in nearby salons.</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+        <div class="serv3">
+            <h3>Car Servicing</h3><br>
+            <p>Book an appointment for car servicing.</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" required><br>
+
+                <label for="service">Select Service:</label>
+                <select id="service">
+                    <option value="Doctor">Doctor</option>
+                    <option value="Salon">Salon</option>
+                    <option value="Car Service">Car Service</option>
+                </select><br>
+
+                <label for="datetime">Preferred Date & Time:</label>
+                <input type="datetime-local" id="datetime" required><br>
+
+                <label>
+                    <input type="checkbox" id="terms" required> Agree to Terms
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <h2>Booked Appointments</h2>
+    <ul id="appointmentsList"></ul>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 WebManager | All Rights Reserved</p>
+            <p>Designed with ❤️ by WebManager Team</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

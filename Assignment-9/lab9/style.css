@@ -1,0 +1,277 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,
+body{
+    background:linear-gradient(275deg,green,rgb(92, 241, 92),rgb(223, 253, 113))
+}
+.header{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color:green;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.nav{
+    margin-right: 20px;
+    height:80px;
+    padding-top:30px
+}
+
+.logo{
+    height: 80px;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-family: Kanit;
+    color: rgb(5, 245, 77);
+}
+nav a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width:100%;
+    height:60px;
+    font-size: 55px;
+    color: white;
+}
+.services{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:50px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family:Libre Baskerville ;
+}
+.servs{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serv1{
+    width:60%;
+    height:200px;
+    background-color: white;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.serv2{
+    width:60%;
+    height:200px;
+    background-color: white;
+    margin-bottom: 80px;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.serv3{
+    width:60%;
+    height:200px;
+    background-color: white;
+    margin-bottom: 80px;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.serv1 h3{
+    font-size: 30px;
+}
+.serv2 h3{
+    font-size: 30px;
+}
+.serv3 h3{
+    font-size: 30px;
+}.serv1 p{
+    font-size: 30px;
+    color: rgb(7, 214, 7);
+}
+.serv2 p{
+    font-size: 30px;
+    color:  rgb(7, 214, 7);
+}
+.serv3 p{
+    font-size: 30px;
+    color:  rgb(7, 214, 7);
+}
+.book-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(61, 241, 45);
+    width:150px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.book-btn:hover{
+    background-color: white;
+    color: green;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    height: 600px;
+    position: relative;
+    border: 3px solid black;
+}
+#closeModal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#appointmentForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#appointmentForm input{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+#appointmentForm button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(61, 241, 45);
+    font-weight: bold;
+    border-radius: 10px;
+}
+#appointmentForm button:hover{
+    background-color: white;
+    color: green;
+}
+#modal-content h2{
+    margin-bottom: 20px;
+    color: black;
+}
+#appointmentForm input[type="date"]{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+#appointmentsList {
+    list-style: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#appointmentsList li {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+#appointmentsList li strong {
+    color: green;
+    font-weight: bold;
+}
+#appointmentsList li:hover {
+    background: #e2ffe2;
+    transform: scale(1.02);
+}
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 600px) {
+    #appointmentsList {
+        width: 90%;
+    }
+
+    #appointmentsList li {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.footer {
+    background-color: #fff;
+    color: rgb(12, 92, 2);
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
